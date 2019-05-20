@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GadgetComposition">
+
+    <ImageButton
+        android:id="@+id/selectHat"
+        android:layout_width="77dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:elevation="5dp"
+        android:onClick="openHat"
+        android:scaleType="fitCenter"
+        android:text="selectHat"
+        android:visibility="visible"
+        app:srcCompat="@drawable/hat1" />
+
+    <ImageButton
+        android:id="@+id/selectGlass"
+        android:layout_width="77dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/selectHat"
+        android:elevation="5dp"
+        android:onClick="openGlass"
+        android:scaleType="fitCenter"
+        android:text="selectGlass"
+        android:visibility="visible"
+        app:srcCompat="@drawable/glass1" />
+
+    <ImageButton
+        android:id="@+id/selectNose"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="5dp"
+        android:onClick="openNose"
+        android:scaleType="fitCenter"
+        android:text="selectNose"
+        android:visibility="visible"
+        app:srcCompat="@drawable/nose2" />
+
+    <ImageButton
+        android:id="@+id/selectMustache"
+        android:layout_width="77dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/selectBeard"
+        android:elevation="5dp"
+        android:onClick="openMustache"
+        android:scaleType="fitCenter"
+        android:text="selectMustach"
+        android:visibility="visible"
+        app:srcCompat="@drawable/mustache1" />
+
+    <ImageButton
+        android:id="@+id/selectBeard"
+        android:layout_width="77dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="5dp"
+        android:onClick="openBeard"
+        android:scaleType="fitCenter"
+        android:text="selectBeard"
+        android:visibility="visible"
+        app:srcCompat="@drawable/beard2" />
+
+    <ImageView
+        android:id="@+id/fotkaImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/fotka"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="makeText"
+        android:text="make Text"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/saveFun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveFun"
+        android:text="save fun" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:onClick="share"
+        android:text="share" />
+
+
+</RelativeLayout>

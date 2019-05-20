@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SergFunApp</string>
+    <string name="fotka">fotka</string>
+    <string name="image_mime_type">image/*</string>
+</resources>
